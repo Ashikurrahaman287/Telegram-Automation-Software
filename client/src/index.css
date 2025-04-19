@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-neutral-100 text-foreground;
+  }
+  
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+    
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+    
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    
+    --primary: 204 70% 53%;
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 160 64% 52%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --ring: 215 20.2% 65.1%;
+    
+    --radius: 0.5rem;
+    
+    --chart-1: 204 70% 53%;
+    --chart-2: 160 64% 52%;
+    --chart-3: 39 100% 50%;
+    --chart-4: 0 84.2% 60.2%;
+    --chart-5: 262 83.3% 57.8%;
+    
+    --sidebar-background: 210 29% 24%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 204 70% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 38% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 29% 29%;
+    --sidebar-ring: 204 70% 53%;
+  }
+}
+
+@layer components {
+  .sidebar-item-active {
+    @apply bg-sidebar-accent text-white;
+  }
+
+  .sidebar-item {
+    @apply flex items-center space-x-2 px-4 py-3 rounded-lg text-neutral-300 hover:bg-sidebar-accent hover:text-white transition-colors mb-1;
+  }
+}
